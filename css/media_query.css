@@ -55,6 +55,17 @@
   .burger-button{
     display: block;
   }
+  /* date_2 */
+  nav .nav_right .date_2 {
+    display: block;
+    z-index: 3;
+    color: white;
+    padding-left: 10px;
+    padding-right:  10px;
+    border-bottom: 1px solid white;
+  }
+
+  /* ---- */
 
   nav .nav_right{
     width: 40%;

@@ -100,6 +100,17 @@ nav .nav_left .date .fecha{
 nav .nav_left .date .hora{
   margin-top: 0;
 }
+/* Date_2 */
+nav .nav_right .date_2 {
+  display: none;
+}
+nav .nav_right .date_2 .fecha{
+  font-weight: 800;
+  margin-bottom: 0;
+}
+nav .nav_right .date_2 .hora{
+  margin-top: 0;
+}
 /*------Nav-right--------*/
 nav .nav_right{
   height: 100%;
