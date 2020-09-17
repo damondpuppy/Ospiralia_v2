@@ -1,0 +1,153 @@
+@media screen and (max-width:1500px){
+
+  .container{
+    padding: 0 30px 0 30px;
+  }
+  nav{
+
+    padding: 0 20px 0 25px;
+  }
+
+}
+
+@media screen and (max-width:1260px){
+
+  .main_page{
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "mensajes     comunicaciones"
+                         "mensajes     comunicaciones"
+                         "evaluaciones comunicaciones"
+                         "boletas      comunicaciones"
+                         "envios       solicitudes"
+                         "vacaciones   solicitudes";
+
+  }
+
+}
+@media screen and (max-width:910px){
+
+  .main_page{
+
+    grid-template-columns: 1fr;
+    grid-template-areas: "mensajes    "
+                         "mensajes     "
+                         "evaluaciones "
+                         "boletas     "
+                         "envios     "
+                         "vacaciones "
+                         "solicitudes"
+                         "solicitudes"
+                         "comunicaciones"
+                         "comunicaciones"
+                         "comunicaciones"
+                         "comunicaciones";
+  }
+
+  .container{
+    padding: 0 15px 0 15px;
+  }
+  nav{
+
+    padding: 0 5px 0 5px;
+  }
+
+  .burger-button{
+    display: block;
+  }
+
+  nav .nav_right{
+    width: 40%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    left: -100vw;
+
+    background-color: var(--blue-color);
+    z-index: 3;
+
+    /*Animacion*/
+    transition: .3s;
+
+  }
+  /*Activar menu solo al darle al icono*/
+  nav .nav_right.is-active{
+
+    left: 0;
+  }
+  /*--------------------------------*/
+  nav .nav_right .iconos{
+
+    flex-direction: column;
+    height: 95%;
+
+  }
+  nav .nav_right .iconos a{
+    display: flex;
+    width: 100%;
+    margin: 0;
+
+    color: white;
+
+    border-bottom: 1px solid white;
+  }
+  nav .nav_right .iconos a:first-child{
+
+    border-top: 1px solid white;
+  }
+
+  nav .nav_right .iconos a span{
+    width: 35%;
+  }
+
+  nav .nav_right .iconos a p{
+    width: 60%;
+    height: 100%;
+    padding: 10%;
+    margin-top: 10%;
+  }
+
+
+}
+@media screen and (max-width:570px){
+
+  nav .nav_left .date{
+    display: none;
+  }
+  .burger-button{
+
+    left: 85%;
+  }
+
+
+
+  .vacaciones .vacaciones_nivel-2 p{
+    font-size: 0.8em;
+  }
+  .vacaciones .vacaciones_nivel-2 .container_0{
+    border-bottom: none;
+  }
+  .vacaciones .vacaciones_nivel-2 .container_1{
+
+    width: 34%;
+    z-index: 2;
+  }
+  .vacaciones .vacaciones_nivel-2 .container_2{
+
+    width: 63%;
+  }
+}
+
+@media screen and (max-width:380px){
+
+  .vacaciones .vacaciones_nivel-2 p{
+    font-size: 0.7em;
+  }
+
+  nav .nav_right{
+    width: 50%;
+
+  }
+
+
+}
