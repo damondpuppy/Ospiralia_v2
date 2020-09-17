@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/media_query.css">
     <link rel="stylesheet" href="./icon/stack/font.css">
+    <script src="script/time.js" charset="utf-8"></script>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   </head>
   <body>
@@ -23,8 +24,16 @@
             <hr>
             <img src="img/user.jpg" class="user_img" alt="user-img">
             <div class="date">
-              <p class="fecha">Jueves 03 Marzo 2020</p>
-              <p class="hora">11:23 am</p>
+              <p class="fecha">
+                <script type="text/javascript">
+                  document.write(fecha);
+                </script>
+              </p>
+              <p class="hora">
+                <script type="text/javascript">
+                  document.write(hora);
+                </script>
+              </p>
             </div>
           </section>
           <section class="nav_right" id="nav_right">
